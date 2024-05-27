@@ -1,0 +1,711 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+#main
+{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    padding-top: 0.1px;
+}
+
+#nav
+{
+    height: 11vh;
+    width: 100%;
+    /* background-color: blue; */
+    margin-top: 40px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav h2
+{
+    /* background-color: rgb(102, 102, 103); */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    font-size: 26 px;
+    font-weight: 600;
+
+}
+
+#nav h3{
+    display: none;
+}
+
+#nav h2:nth-last-child(1)
+{
+    width: 10%;
+}
+
+#nav h2:nth-last-child(2)
+{
+    width: 29%;
+}
+
+#nav h1
+{
+    /* background-color: rgb(102, 102, 103); */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monument;
+    font-size: 45px;
+    letter-spacing: -1px;
+    position: relative;
+}
+
+#nav h1::after{
+    content:"©️";
+    font-family: gilroy;
+    font-weight: 300;
+    font-size: 25px;
+    position: absolute;
+    top: 20%;
+    right: 13%;
+}
+
+#nav h1::before{
+    content:"model management";
+    font-family: gilroy;
+    font-weight: 500;
+    color: #666;
+    font-size: 15px;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 25%;
+    right: 18%;
+}
+
+
+
+#center
+{
+    height: 90%;
+    width: 100%;
+    background-color: white;
+    padding: 4vw;
+    position: relative;
+}
+
+#content
+{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    position: relative;
+    
+}
+
+#content video 
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay
+{
+    width: 100%;
+    height: 52%;
+    /* background-color: rgb(206, 61, 61); */
+    bottom: 0;
+    position: absolute;
+    color: white;
+    padding: 1.2vw;
+}
+
+#over1
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+    
+    
+
+}
+
+#over1 h1
+{
+    font-family: monument;
+    font-size: 3.6vw;
+    mix-blend-mode: difference;
+    
+}
+
+#over2
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-top: 2px solid  black; */ 
+    padding: 1.5vw 0;
+
+}
+
+#over1 h2
+{
+    
+    font-size: 1vw;
+    padding: 2vw 2.2vw;
+    /* background-color: blue; */
+    border-radius: 50%;
+    border: 2px solid black;
+    border-bottom: 6px solid black;
+    
+}
+
+
+#over2 h4
+{
+    
+    font-size: 1.3vw;
+    font-weight: 500;
+    
+}
+
+#over2 img{
+    height: 3vw;
+}
+
+#scroll
+{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    white-space: nowrap ;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+#scroll img
+{
+    /* display: none; */
+    height: 90%;
+    border-radius: 50%;
+    width: 16.5%;
+    object-fit: cover;
+    /* object-position: top; */
+    margin: 0.2vw ;
+}
+
+#container
+{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    display: inline-block;
+    padding: 2vw;
+    animation: anime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+} 
+
+@keyframes anime
+{
+    from
+    {
+        transform: translateX(0);
+    }
+    to
+    {
+        transform: translateX(-100%);
+    }
+}
+
+#alphabets
+{
+    height: 11vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+#alphabets h5
+{
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic ;
+    border-bottom: 2px solid black;
+    letter-spacing: 4px;
+    margin-right: 2vw;
+}
+
+#alphabets h6
+{
+    font-size: 1vw;
+    text-transform: uppercase;
+    /* background-color: rgb(131, 157, 28); */
+    padding: 0.5vw 0.6vw;
+    font-weight: 400;
+    font-style: italic ;
+    /* border-bottom: 2px solid black; */
+    letter-spacing: 4px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+
+#alphabets h6:hover
+{
+
+    border: 1px solid rgb(0, 0, 0);
+
+}
+
+
+
+#page2
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+}
+
+#page2-part1
+{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1517503113970-b3c6afce9ac0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    /* background-color: red; */
+    background-size: cover;
+    background-position: center;
+}
+
+#page2-part2
+{
+    height: 100%;
+    width: 46%;
+    
+
+    background-size: cover;
+    /* background-position: center; */
+    /* background-color: blue; */
+}
+
+#page2-part2 img{
+    height: 70%;
+    
+}
+
+#text
+{
+    /* margin-top: 20px; */
+    display: flex;
+    height: 27vh;
+    width: 100%;
+    /* background-color: red; */
+    padding: 2vw;
+    gap: 2vw;
+}
+
+#text-left
+{
+    height: 100%;
+    width: 30%;
+    padding: 0.5vw;
+    /* background-color: blue; */
+}
+
+#text-right
+{
+    height: 100%;
+    width: 60%;
+    /* background-color: grey; */
+    padding: 0.5vw 1vw;
+    
+}
+
+#text-right h3
+{
+    font-size: 0.8vw;
+}
+
+#text-left h2
+{
+    font-size: 1.3vw;
+}
+
+#page2-part1 h2{
+    font-size: 2vw;
+   
+}
+
+#red
+{
+    background-color: red;
+    width: 40px;
+    height: 40px;
+}
+
+#page3
+{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 5vw 4vw;
+}
+
+#page3>h1
+{
+    text-align: center;
+    font-family: monument;
+    text-transform: uppercase;
+    font-size: 3vw;
+    margin-bottom: 5vh;
+
+
+}
+
+.elem
+{
+    height: 16vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 2vw;
+    position: relative;
+}
+
+.elem h4
+{
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+
+.elem .elem-part2
+{
+    width: 45%;
+    /* background-color: red; */
+}
+
+.elem .elem-part2 h1{
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+.elem .elem-part2 h5{
+    font-size: 0.9vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+
+.elem:nth-last-child(1)
+{
+    border-bottom: 2px solid black;
+}
+
+.elem #subpart4
+{
+    /* background-color: red; */
+    width: 25%;
+}
+
+.elem #subpart4 h2
+{
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+
+.elem img{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    border-radius: 50%;
+    left: 20%;
+    object-fit: cover;
+    opacity: 0;
+    transition: all ease 0.5s;
+    /* cursor: pointer; */
+}
+
+.elem:hover img{
+    opacity: 1;
+    left: 30%;
+}
+
+.elem:hover
+{
+    background-color: rgba(0, 0, 0, 0.306);
+    transition: 0.5s;
+
+}
+
+
+#marque
+{
+    /* height: 15vh; */
+    width: 100%;
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0.5vw;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+#marque h1{
+    display: inline-block;
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px  black;
+    color: transparent;
+    font-family: monument;
+    margin-right: 16px;
+    letter-spacing: 3px; 
+    animation: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* background-color: blue; */
+}
+
+#footer
+{
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes move
+{
+    from 
+    {
+        transform: translateX(0);
+    }
+
+    to
+    {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+@media (max-width:600px)
+{
+
+
+        body 
+        {
+            overflow-x: hidden;
+        }
+
+
+
+        #nav
+        {
+        height: 8vh;
+        margin-top: 20px;
+        padding: 0vw 5vw;
+    
+        }
+
+    #nav h2
+    {
+ 
+        display: none;
+
+    }
+
+ 
+
+    #nav h1
+    {
+
+        width: 40%;
+
+        justify-content: flex-start;
+
+        font-size: 24px;
+
+    }
+
+
+    #nav h3
+    {
+        display: block;
+    }
+
+    #nav h1::after{
+    
+        display: none;
+    }
+
+    #nav h1::before{
+
+        display: none ;
+    }
+
+
+    #center
+{
+    height: 50%;
+    width: 100%;
+    background-color: white;
+    padding: 4vw;
+    position: relative;
+}
+
+#content
+{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    position: relative;
+    
+}
+
+#content video 
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay
+{
+    width: 100%;
+    height: fit-content;
+    /* background-color: rgb(206, 61, 61); */
+    bottom: 0;
+    position: absolute;
+    color: white;
+    padding: 1.2vw;
+}
+
+#over1
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+    
+    
+
+}
+
+#over1 h1
+{
+    font-family: monument;
+    font-size: 4.6vw;
+    mix-blend-mode: difference;
+    
+}
+
+#over2
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-top: 2px solid  black; */ 
+    padding: 1.5vw 0;
+
+}
+
+#over1 h2
+{
+    
+    font-size: 2vw;
+    padding: 3vw 3.2vw;
+    /* background-color: blue; */
+    border-radius: 50%;
+    border: 2px solid black;
+    border-bottom: 6px solid black;
+    
+}
+
+
+#over2 h4
+{
+    
+    font-size: 3.2vw;
+    font-weight: 500;
+    
+}
+
+#over2 img{
+    height: 5vw;
+}
+
+
+
+
+
+#scroll
+{
+    height: 20vh;
+    width: 100%;
+    /* background-color: red; */
+    white-space: nowrap ;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+#scroll img
+{
+    /* display: none; */
+    height: 90%;
+    border-radius: 50%;
+    width: 25%;
+    object-fit: cover;
+    /* object-position: top; */
+    margin: 0.2vw ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
